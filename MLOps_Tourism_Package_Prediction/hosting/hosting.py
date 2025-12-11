@@ -1,0 +1,10 @@
+from huggingface_hub import HfApi
+import os
+
+api = HfApi(token=os.getenv("HF_TOKEN_MLOPSTPP"))
+api.upload_folder(
+    folder_path="/content/drive/My Drive/AIML_Project_10_Tourism Package Prediction/MLOps_Tourism_Package_Prediction/deployment",     # the local folder containing your files
+    repo_id="PPathakH18/Tourism-Package-Prediction",          # the target repo
+    repo_type="space",                                        # dataset, model, or space
+    path_in_repo="",                                          # optional: subfolder path inside the repo
+)
