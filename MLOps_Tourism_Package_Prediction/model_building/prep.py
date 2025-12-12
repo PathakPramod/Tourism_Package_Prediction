@@ -106,7 +106,7 @@ y = df["ProdTaken"]
 # df['Type'] = label_encoder.fit_transform(df['Type'])
 
 # 2....use get_dummies function to convert the categorical columns
-X = pd.get_dummies(X, drop_first=True)
+# X = pd.get_dummies(X, drop_first=True)
 
 
 # 3....Perform train-test split, use stratify to maintain the original distribution of Dependent variable as of original set
